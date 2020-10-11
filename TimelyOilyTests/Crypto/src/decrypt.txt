@@ -1,0 +1,38 @@
+***** OVERVIEW *****
+*
+*
+Here's a brief explanation of how to work with the Almas Baimagambetov's code on https://www.youtube.com/watch?v=luUeSnIYjJo on repl.it.
+You may fork my code and use as is, and then add a try/catch/finnally clause to catch one or more exceptions.
+The Main class provided is the default. Instead, I have created a subfolder Crypto with all the Crypto files. 
+*
+*
+***** HOW TO USE THESE FILES *****
+*
+*
+To compile, you will need to still click on Run and compile/execute Main. This is the simplest way for me to pass along the files to you. 
+The, you may run any code from the command line with the command "java <filename>" where <filename? is the name of your executable. In this case, that is CryptoApp. 
+So, first click on Run to compile all the files in your repl.it directory and execute Main. 
+Then type "java CryptoApp" at the command line to run this particular program.
+*
+*
+***** MODIFICATIONS *****
+*
+*
+Otherwise, my code is almost identical to Almas's code with the following edits. 
+The trick was finding the home directory. I checked this in a few ways. First, I used the Linux pwd command. Then I used the Path cwd = FileSystems.getDefault().getPath("").toAbsolutePath(); to retrieve the entire path to the file. I printed it.See lines 20-21 in CryptoApp.java.
+I also changed some of the filenames and variables to be more descriptive to the task.
+*
+*
+***** INSTRUCTIONS FOR THE MODULE 4 EXERCISE *****
+*
+*
+Fork this folder to your own account
+Run the CryptoApp application to make sure it works.
+Optional: Make improvements!
+Now, change the name of the file to encrypt to a non-existing file. 
+Run it, and note the Exception type(s).
+Write a try/catch/finally clause to catch one or more specific Exception objects.
+Test your try/catch/finally clause.
+Answer this question in your own README file at the end:
+-- What happens when you change the filename to store your encrypted data?   
+Submit your own repo link on the Module 4 Discussion Board.

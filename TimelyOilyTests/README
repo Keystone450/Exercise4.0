@@ -1,0 +1,19 @@
+
+ javac -classpath .:/run_dir/junit-4.12.jar:target/dependency/* -d . Crypto/BasicCrypto.java Crypto/Crypto.java Crypto/CryptoApp.java Main.java
+ java -classpath .:/run_dir/junit-4.12.jar:target/dependency/* Main
+jHello world!
+ java CryptoApp
+Hello 2043-er's! Let's try this again :-)
+Current Working Directory: /home/runner/TimelyOilyTests
+Exception in thread "main" java.nio.file.NoSuchFileException: /home/runner/C-2044-Sample/Crypto/src/encrypt.txt
+    at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+    at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+    at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+    at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+    at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+    at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+    at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+    at CryptoApp.main(CryptoApp.java:26)
+ 
+This is the Exception type I got
+When I changed the filename to store encrypted data. It gave me exception messages, in which the exception describes the diruption of the normal flow of the program's instructions. 
